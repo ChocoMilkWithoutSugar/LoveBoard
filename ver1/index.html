@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LoveBoard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <p style="color: #ccc;">
+      I'm working on a new version of this "plugin" that is more effecient. For
+      now, it's a private project. Also, there a quite a few broken things here.
+    </p>
+    <div class="col-12">
+      <div class="row">
+        <div class="grid-settings" style="max-width: 300px;">
+          <!-- 			<button class="btn button display-inline new_widget">new widget at </button> -->
+          <div class="form-check display-inline view-gridlines-div">
+            <label class="view-gridlines-label">Display gridlines?</label>
+            <div class="toggle">
+              <input
+                type="checkbox"
+                id="toggle1"
+                class="togglegridlines"
+                checked
+              />
+              <label for="toggle1"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn-sm fg-add-widget-photo">
+          add photo
+        </button>
+        <button class="btn btn-sm fg-add-widget-video">
+          add video
+        </button>
+        <button class="btn btn-sm fg-add-widget-sticker">
+          add sticker
+        </button>
+        <div class="col-sm-12">
+          <div id="zone_div">
+            <div
+              class="flexgrid-container nomelacontainer"
+              style="width: 500px;"
+            >
+              <div class="flexgrid-helper">
+                <div class="add-row"></div>
+                <div class="remove-row"></div>
+                <button class="btn btn-sm clear-flexgrid">clear zone</button>
+                <button class="btn btn-sm fg-add-widget">add zone</button>
+                <button class="btn btn-sm save-flexgrid">
+                  <i class="fas fa-save"></i>
+                </button>
+              </div>
+              <div class="flexgrid-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
