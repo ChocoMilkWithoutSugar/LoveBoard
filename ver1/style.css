@@ -6,6 +6,12 @@
   --placeholder: rgba(0, 0, 0, 0.5);
   --no-drag: rgba(100, 100, 100, 0.2);
   --wig-color: #222;
+
+
+  
+  --zone-bg-peach: #cc6d6d;
+  
+  --zone-bg-purple: #611caf;
 }
 .widget-holder-label {
   position: absolute;
@@ -681,4 +687,20 @@ body {
 }
 
 .nomelacontainer {
+}
+
+
+
+@media all and (min-width: 576px) {
+  .nomelacontainer {
+    max-width: 100%;
+    background: var(--zone-bg-purple);
+  }
+}
+
+@media all and (min-width: 992px) { 
+  .nomelacontainer {
+    max-width: 300px;
+    background: var(--zone-bg-peach);
+  }
 }

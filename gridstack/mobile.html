@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple mobile demo</title>
+
+  <link rel="stylesheet" href="demo.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/5.0.0/gridstack-jq.min.js" integrity="sha512-oF8ns4Wj5mlG9yIfHYCz/gVsupgJ5TWV9LtSb7rlTkxkmj7htLvNpW39oMLHVB941mdHUDIkoF32Pn8IF9RsDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<body>
+  <h1>Simple mobile demo</h1>
+  <p>uses gridstack-jq.js which includes jquery.ui.touch-punch by default (minimum v3.2+, small 2k)</p>
+  <div class="grid-stack"></div>
+  <script type="text/javascript">
+    let grid = GridStack.init({
+      //column: 6, // will auto switch on smaller screens
+      disableOneColumnMode :true,
+      float:true,
+      cellHeightUnit: 'px',
+      cellHeight: 100, // make sure we have a decent height and not width/12 for 1 column
+      alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    });
+    grid.load([
+        /*
+        {x:0, y:0, content: '1'},
+        {x:0, y:1, h:2, content: '2'},
+        {x:0, y:3, content: '3'}
+*/
+        
+      {x: 0, y: 0, w: 2, content: '0'},
+      {x: 2, y: 0, w: 2, h: 2, content: '1'},
+      {x: 5, y: 0, content: '2'},
+      {x: 1, y: 3, w: 4, content: '3'},
+      {x: 5, y: 2, w: 2, content: '4'},
+      {x: 0, y: 4, w: 12, content: '5'}
+    
+    ])
+  </script>
+</body>
+</html>
