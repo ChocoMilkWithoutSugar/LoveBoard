@@ -24,7 +24,9 @@ focus on be a free app without paid addons
         - save user profile on local storage/ save to json
       - backend stuff
         - accounts
+        https://ory.sh/
         - save media - file storage
+        https://min.io/
       - dev community
         - document all the things
         - make sure to have all the code available for everyone, remenber is open source
